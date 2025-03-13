@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Hlogo from "@/public/Logos/HeaderLogo.png"
+import Aphoto from "@/public/Photos/photoFour.jpg"
 
 export default function AboutPage() {
   return (
@@ -8,7 +10,7 @@ export default function AboutPage() {
       <div className="flex flex-col justify-center items-center w-full max-w-6xl gap-16 lg:flex-row">
         <div className="w-full lg:w-1/2 justify-end flex">
           <div className="relative w-full h-64 lg:h-80">
-            <Image src="/images/HeaderLogo.png" alt="DCL-PRO Services Logo" fill className="object-contain" />
+            <Image src={Hlogo} alt="DCL-PRO Services Logo" fill className="object-contain" />
           </div>
         </div>
 
@@ -44,7 +46,7 @@ export default function AboutPage() {
         <div className="w-full lg:w-1/2 justify-start flex order-1 lg:order-2">
           <div className="relative w-full h-64 lg:h-80 rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src={Aphoto}
               alt="Care provider staff with client"
               fill
               className="object-cover rounded-lg"
